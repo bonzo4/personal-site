@@ -2,6 +2,7 @@
 
 import news1 from "@/public/projects/news1.png";
 import news2 from "@/public/projects/news2.png";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
@@ -11,7 +12,7 @@ export default function News() {
 
   return (
     <div
-      className="flex min-h-screen grow flex-col items-center justify-center gap-8 lg:gap-10"
+      className="flex min-h-screen grow flex-col items-center justify-center gap-8"
       id="news"
     >
       <h2 className="text-3xl lg:text-5xl">Projects</h2>
@@ -49,18 +50,23 @@ export default function News() {
           </div>
         </div>
       </div>
-      <button
-        onClick={() => {
-          const nextSection = document.getElementById("global");
-          if (nextSection) {
-            nextSection.scrollIntoView({ behavior: "smooth" });
-          }
-        }}
-        className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 5 }}
       >
-        <span>Global Chat</span>
-        <FaAngleDoubleDown size={20} />
-      </button>
+        <button
+          onClick={() => {
+            const nextSection = document.getElementById("global");
+            if (nextSection) {
+              nextSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+        >
+          <span>Global Chat</span>
+          <FaAngleDoubleDown size={20} />
+        </button>
+      </motion.div>
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import global1 from "@/public/projects/global1.png";
 import global2 from "@/public/projects/global2.png";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
@@ -52,18 +53,23 @@ export default function Global() {
           </p>
         </div>
       </div>
-      <button
-        onClick={() => {
-          const nextSection = document.getElementById("core");
-          if (nextSection) {
-            nextSection.scrollIntoView({ behavior: "smooth" });
-          }
-        }}
-        className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 5 }}
       >
-        <span>C.O.R.E.</span>
-        <FaAngleDoubleDown size={20} />
-      </button>
+        <button
+          onClick={() => {
+            const nextSection = document.getElementById("core");
+            if (nextSection) {
+              nextSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+        >
+          <span>C.O.R.E.</span>
+          <FaAngleDoubleDown size={20} />
+        </button>
+      </motion.div>
     </div>
   );
 }

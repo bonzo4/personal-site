@@ -2,6 +2,7 @@
 
 import core1 from "@/public/projects/core1.png";
 import core2 from "@/public/projects/core2.png";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
@@ -47,18 +48,23 @@ export default function Core() {
           </div>
         </div>
       </div>
-      <button
-        onClick={() => {
-          const nextSection = document.getElementById("dropper");
-          if (nextSection) {
-            nextSection.scrollIntoView({ behavior: "smooth" });
-          }
-        }}
-        className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white px-4 py-2 lg:flex"
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 5 }}
       >
-        <span>Dropper</span>
-        <FaAngleDoubleDown size={20} />
-      </button>
+        <button
+          onClick={() => {
+            const nextSection = document.getElementById("dropper");
+            if (nextSection) {
+              nextSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+        >
+          <span>Dropper</span>
+          <FaAngleDoubleDown size={20} />
+        </button>
+      </motion.div>
     </div>
   );
 }

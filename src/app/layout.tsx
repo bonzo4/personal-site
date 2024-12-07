@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto, Merriweather, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import TopButton from "@/components/TopButton";
 import Footer from "@/components/Footer";
 
-const merriweather = Outfit({
+const outfit = Outfit({
   weight: ["300", "400", "700"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${merriweather.className} relative antialiased`}>
+      <body className={`${outfit.className} relative antialiased`}>
         <div>{children}</div>
         <div className="fixed bottom-24 right-10 z-10">
           <TopButton />

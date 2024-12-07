@@ -1,19 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaAngleDoubleUp } from "react-icons/fa";
 
 export default function TopButton() {
   const [isTop, setIsTop] = useState(true);
 
-  window.onscroll = () => {
-    if (window.scrollY > 100) {
-      setIsTop(false);
-    } else {
-      setIsTop(true);
-    }
-  };
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        setIsTop(false);
+      } else {
+        setIsTop(true);
+      }
+    };
+  }, []);
 
   return (
     <motion.div

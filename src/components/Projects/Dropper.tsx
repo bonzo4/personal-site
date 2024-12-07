@@ -4,7 +4,6 @@ import dropper1 from "@/public/projects/dropper1.png";
 import dropper2 from "@/public/projects/dropper2.png";
 import Image from "next/image";
 import { useState } from "react";
-import { FaAngleDoubleDown } from "react-icons/fa";
 
 export default function Dropper() {
   const [selectedImage, setSelectedImage] = useState("dropper1");

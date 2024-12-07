@@ -2,7 +2,6 @@ import { SiTypescript } from "react-icons/si";
 import { FaRust } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { CgAnchor } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { RiSupabaseFill } from "react-icons/ri";
 import { FiFigma } from "react-icons/fi";

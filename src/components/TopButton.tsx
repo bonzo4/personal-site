@@ -31,7 +31,10 @@ export default function TopButton() {
   return (
     <button
       onClick={() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        const nextSection = document.getElementById("hero");
+        if (nextSection) {
+          nextSection.scrollIntoView({ behavior: "smooth" });
+        }
       }}
       className={`flex flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}
     >

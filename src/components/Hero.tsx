@@ -8,13 +8,13 @@ import { FaAngleDoubleDown } from "react-icons/fa";
 export default function Hero() {
   return (
     <div
-      className="flex min-h-screen grow flex-col items-center justify-center gap-10 pt-10"
+      className="flex min-h-screen grow flex-col items-center justify-center gap-4 pt-10 lg:gap-10"
       id="hero"
     >
-      <h1 className="text-center text-5xl">
+      <h1 className="text-center text-3xl lg:text-5xl">
         Full-stack Dev with On-chain Experience
       </h1>
-      <div className="flex flex-col items-center justify-center gap-10 lg:flex-row">
+      <div className="flex flex-col items-center justify-center gap-4 lg:flex-row lg:gap-10">
         <div className="h-[300px] w-[300px] overflow-hidden rounded-md border-2">
           <Image src={headshot} alt="Alonzo Sabino" width={300} />
         </div>
@@ -45,7 +45,7 @@ export default function Hero() {
         }}
         className="flex flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2"
       >
-        <span>About me</span>
+        <span>About</span>
         <FaAngleDoubleDown size={20} />
       </button>
     </div>

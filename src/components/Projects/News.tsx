@@ -11,24 +11,26 @@ export default function News() {
 
   return (
     <div
-      className="gpa-8 flex min-h-screen grow flex-col items-center justify-center lg:gap-16"
+      className="flex min-h-screen grow flex-col items-center justify-center gap-8 lg:gap-10"
       id="news"
     >
-      <h2 className="text-4xl lg:text-5xl">Projects</h2>
-      <div className="flex max-w-[700px] flex-col items-center justify-center gap-10 lg:max-w-[1200px] lg:flex-row">
+      <h2 className="text-3xl lg:text-5xl">Projects</h2>
+      <div className="flex max-w-[700px] flex-col items-center justify-center gap-10 lg:max-w-[1200px] lg:flex-row lg:gap-24">
         <div className="flex flex-col items-start justify-center gap-2">
-          <h3 className="text-4xl underline">Syndicate News</h3>
-          <p className="text-xl">
+          <h3 className="text-lg underline lg:text-3xl">Syndicate News</h3>
+          <p className="text-base lg:text-xl">
             - The leading Web3 Discord Newsletter distributing to 1,300
             Communities and 35,000 unique users
           </p>
-          <p className="text-xl">- Built with Typescript and Supabase</p>
+          <p className="text-base lg:text-xl">
+            - Built with Typescript and Supabase
+          </p>
         </div>
-        <div className="relative">
+        <div className="relative ml-16 mt-10 lg:mt-36">
           <div
             className={`${
               selectedImage === "news1" ? "z-20" : "z-10"
-            } relative h-[400px] w-[400px] overflow-hidden rounded-md border-2 bg-white hover:cursor-pointer`}
+            } absolute left-[-50px] top-[-50px] h-[200px] w-[200px] overflow-hidden rounded-md border-2 bg-white hover:cursor-pointer lg:left-[-100px] lg:top-[-100px] lg:h-[400px] lg:w-[400px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "news2" ? "news1" : "news2")
             }
@@ -38,7 +40,7 @@ export default function News() {
           <div
             className={`${
               selectedImage === "news2" ? "z-20" : "z-10"
-            } absolute bottom-[-100px] right-[-100px] flex h-[400px] w-[400px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg hover:cursor-pointer`}
+            } relative flex h-[200px] w-[200px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg hover:cursor-pointer lg:h-[400px] lg:w-[400px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "news1" ? "news2" : "news1")
             }
@@ -54,7 +56,7 @@ export default function News() {
             nextSection.scrollIntoView({ behavior: "smooth" });
           }
         }}
-        className="flex flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2"
+        className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
       >
         <span>Global Chat</span>
         <FaAngleDoubleDown size={20} />

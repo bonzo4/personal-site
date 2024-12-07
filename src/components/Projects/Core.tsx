@@ -7,28 +7,28 @@ import { useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
 export default function Core() {
-  const [selectedImage, setSelectedImage] = useState("core1");
+  const [selectedImage, setSelectedImage] = useState("core2");
 
   return (
     <div
-      className="flex min-h-screen grow flex-col items-center justify-center gap-24 pt-16"
+      className="flex min-h-screen grow flex-col items-center justify-center gap-24 pb-16 pt-16 lg:pb-0"
       id="core"
     >
-      <div className="itmes-center flex max-w-[1200px] flex-row justify-center gap-10">
+      <div className="flex max-w-[1200px] flex-col items-center justify-center gap-10 lg:flex-row">
         <div className="flex flex-col items-start justify-center gap-2">
-          <h3 className="text-4xl underline">C.O.R.E.</h3>
-          <p className="text-xl">
+          <h3 className="text-lg underline lg:text-3xl">C.O.R.E.</h3>
+          <p className="text-base lg:text-xl">
             - Internal management and compensation system for the Syndicate team
           </p>
-          <p className="text-xl">
+          <p className="text-base lg:text-xl">
             - Built with Typescript, Nextjs, Rust, Anchor and Supabase
           </p>
         </div>
-        <div className="relative">
+        <div className="relative mr-8">
           <div
             className={`${
               selectedImage === "core1" ? "z-20" : "z-10"
-            } relative h-[250px] w-[500px] overflow-hidden rounded-md border-2 bg-white hover:cursor-pointer`}
+            } relative h-[150px] w-[300px] overflow-hidden rounded-md border-2 bg-white hover:cursor-pointer lg:h-[250px] lg:w-[500px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "core2" ? "core1" : "core2")
             }
@@ -38,7 +38,7 @@ export default function Core() {
           <div
             className={`${
               selectedImage === "core2" ? "z-20" : "z-10"
-            } absolute bottom-[-60px] right-[-60px] flex h-[250px] w-[500px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg hover:cursor-pointer`}
+            } absolute bottom-[-40px] right-[-40px] flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg hover:cursor-pointer lg:h-[250px] lg:w-[500px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "core1" ? "core2" : "core1")
             }
@@ -54,7 +54,7 @@ export default function Core() {
             nextSection.scrollIntoView({ behavior: "smooth" });
           }
         }}
-        className="flex flex-row items-center justify-center gap-2 rounded-full border-2 border-white px-4 py-2"
+        className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white px-4 py-2 lg:flex"
       >
         <span>Dropper</span>
         <FaAngleDoubleDown size={20} />

@@ -27,7 +27,9 @@ export default function RootLayout({
         <div className="fixed bottom-24 right-10 z-10">
           <TopButton />
         </div>
-        <Footer />
+        <div className="fixed bottom-0 w-full">
+          <Footer />
+        </div>
       </body>
     </html>
   );

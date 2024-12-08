@@ -39,7 +39,7 @@ export default function Core() {
           <div
             className={`${
               selectedImage === "core2" ? "z-20" : "z-10"
-            } hover:shadow-glow absolute bottom-[-40px] right-[-40px] flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:h-[250px] lg:w-[500px]`}
+            } hover:shadow-glow absolute bottom-[-40px] right-[-40px] flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:bottom-[-60px] lg:right-[-60px] lg:h-[250px] lg:w-[500px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "core1" ? "core2" : "core1")
             }

@@ -45,7 +45,7 @@ export default function Global() {
         <div className="flex flex-col items-start justify-center gap-2">
           <h3 className="text-lg underline lg:text-3xl">Global Chat</h3>
           <p className="text-base lg:text-xl">
-            - Connecting the top Solana communities through a single discord
+            - Connecting the top Solana communities through a single Discord
             chat room
           </p>
           <p className="text-base lg:text-xl">

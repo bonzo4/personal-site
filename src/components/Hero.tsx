@@ -15,7 +15,7 @@ export default function Hero() {
       <motion.div
         initial={{ y: -1000 }}
         animate={{ y: 0 }}
-        transition={{ duration: 1, type: "spring", stiffness: 50 }}
+        transition={{ duration: 1, type: "spring", stiffness: 50, delay: 0.5 }}
       >
         <h1 className="text-center text-3xl lg:text-5xl">
           Full-stack Dev with On-chain Experience
@@ -29,7 +29,7 @@ export default function Hero() {
             duration: 1,
             type: "spring",
             stiffness: 20,
-            delay: 0.5,
+            delay: 1,
           }}
         >
           <div className="h-[300px] w-[300px] overflow-hidden rounded-md border-2">
@@ -43,7 +43,7 @@ export default function Hero() {
             duration: 1,
             type: "spring",
             stiffness: 20,
-            delay: 0.5,
+            delay: 1,
           }}
         >
           <div className="flex flex-col items-center gap-2 lg:items-start">
@@ -67,7 +67,7 @@ export default function Hero() {
       <motion.div
         initial={{ y: 1000 }}
         animate={{ y: 0 }}
-        transition={{ duration: 1, type: "spring", stiffness: 50 }}
+        transition={{ duration: 1, type: "spring", stiffness: 50, delay: 0.5 }}
       >
         <motion.div
           animate={{ y: [0, 20, 0] }}

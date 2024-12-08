@@ -4,10 +4,9 @@ export default function Description() {
       <h2 className="text-xl lg:text-3xl">Description:</h2>
       <p className="text-base lg:text-xl">
         Hello, I&apos;m Alonzo, a passionate developer with experience in
-        building Solana platforms. I have proven track record in building
-        engaging media tools, crafting responsive UIs, and creating robust
-        blockchain applications using Typescript, Rust, and Open Source
-        Technology.
+        building Web3 platforms. I have proven track record in building engaging
+        media tools, crafting responsive UIs, and creating robust blockchain
+        applications using Typescript, Rust, and Open Source Technology.
       </p>
     </div>
   );

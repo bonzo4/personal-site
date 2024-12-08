@@ -5,7 +5,7 @@ import global2 from "@/public/projects/global2.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { FaAngleDoubleDown } from "react-icons/fa";
+import { FaAngleDoubleDown, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Global() {
   const [selectedImage, setSelectedImage] = useState("global2");
@@ -32,14 +32,14 @@ export default function Global() {
           <div
             className={`${
               selectedImage === "global2" ? "z-20" : "z-10"
-            } hover:shadow-glow relative flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:h-[200px] lg:w-[400px]`}
+            } hover:shadow-glow relative flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:h-[250px] lg:w-[500px]`}
             onClick={() =>
               setSelectedImage(
                 selectedImage === "global1" ? "global2" : "global1",
               )
             }
           >
-            <Image src={global2} alt="global2" width={400} />
+            <Image src={global2} alt="global2" width={500} />
           </div>
         </div>
         <div className="flex flex-col items-start justify-center gap-2">
@@ -51,6 +51,14 @@ export default function Global() {
           <p className="text-base lg:text-xl">
             - Built with Typescript, NestJs and Supabase
           </p>
+          <a
+            href="https://ntwrk.global"
+            target="_blank"
+            className="flex flex-row items-center gap-2 text-base hover:underline lg:text-xl"
+          >
+            <span>Learn More</span>
+            <FaExternalLinkAlt size={16} />
+          </a>
         </div>
       </div>
       <motion.div

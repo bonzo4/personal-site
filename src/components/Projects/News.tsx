@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function News() {
   const [selectedImage, setSelectedImage] = useState("news1");
@@ -26,6 +27,14 @@ export default function News() {
           <p className="text-base lg:text-xl">
             - Built with Typescript and Supabase
           </p>
+          <a
+            href="https://syndicatenetwork.io"
+            target="_blank"
+            className="flex flex-row items-center gap-2 text-base hover:underline lg:text-xl"
+          >
+            <span>Learn More</span>
+            <FaExternalLinkAlt size={16} />
+          </a>
         </div>
         <div className="relative ml-16 mt-10 lg:mt-36">
           <div

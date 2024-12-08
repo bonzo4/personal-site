@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${outfit.className} relative antialiased`}>
         <div>{children}</div>
-        <div className="fixed bottom-4 right-4 z-10 lg:bottom-24 lg:right-10">
+        <div className="fixed bottom-2 right-4 z-10 lg:bottom-24 lg:right-10">
           <TopButton />
         </div>
         <div className="fixed bottom-0 w-full">

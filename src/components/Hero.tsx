@@ -52,13 +52,13 @@ export default function Hero() {
             <span className="">Contact: alonzo.bonzo.dev@gmail.com</span>
             <div className="flex flex-row gap-4">
               <a href="https://github.com/bonzo4" target="_blank">
-                <FaGithub size={25} />
+                <FaGithub size={25} className="hover:opacity-50" />
               </a>
               <a
                 href="https://www.linkedin.com/in/alonzo-sabino-a74a5220b/"
                 target="_blank"
               >
-                <FaLinkedin size={25} />
+                <FaLinkedin size={25} className="hover:opacity-50" />
               </a>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function Hero() {
         transition={{ duration: 1, type: "spring", stiffness: 50 }}
       >
         <motion.div
-          animate={{ y: [0, 10, 0] }}
+          animate={{ y: [0, 20, 0] }}
           transition={{ repeat: Infinity, duration: 5 }}
         >
           <button
@@ -80,7 +80,7 @@ export default function Hero() {
                 nextSection.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="flex flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2"
+            className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 hover:bg-white hover:bg-opacity-25 lg:flex"
           >
             <span>About</span>
             <FaAngleDoubleDown size={20} />

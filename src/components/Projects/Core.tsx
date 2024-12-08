@@ -29,7 +29,7 @@ export default function Core() {
           <div
             className={`${
               selectedImage === "core1" ? "z-20" : "z-10"
-            } relative h-[150px] w-[300px] overflow-hidden rounded-md border-2 bg-white hover:cursor-pointer lg:h-[250px] lg:w-[500px]`}
+            } hover:shadow-glow relative h-[150px] w-[300px] overflow-hidden rounded-md border-2 bg-white drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:h-[250px] lg:w-[500px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "core2" ? "core1" : "core2")
             }
@@ -39,7 +39,7 @@ export default function Core() {
           <div
             className={`${
               selectedImage === "core2" ? "z-20" : "z-10"
-            } absolute bottom-[-40px] right-[-40px] flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg hover:cursor-pointer lg:h-[250px] lg:w-[500px]`}
+            } hover:shadow-glow absolute bottom-[-40px] right-[-40px] flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:h-[250px] lg:w-[500px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "core1" ? "core2" : "core1")
             }
@@ -49,7 +49,7 @@ export default function Core() {
         </div>
       </div>
       <motion.div
-        animate={{ y: [0, 10, 0] }}
+        animate={{ y: [0, 20, 0] }}
         transition={{ repeat: Infinity, duration: 5 }}
       >
         <button
@@ -59,7 +59,7 @@ export default function Core() {
               nextSection.scrollIntoView({ behavior: "smooth" });
             }
           }}
-          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 hover:bg-white hover:bg-opacity-25 lg:flex"
         >
           <span>Dropper</span>
           <FaAngleDoubleDown size={20} />

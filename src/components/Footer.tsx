@@ -39,14 +39,14 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub size={25} />
+          <FaGithub size={25} className="hover:opacity-50" />
         </a>
         <a
           href="https://www.linkedin.com/in/alonzo-sabino-a74a5220b/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin size={25} />
+          <FaLinkedin size={25} className="hover:opacity-50" />
         </a>
       </div>
       <span className="text-xs">ALONZO SABINO © 2024</span>

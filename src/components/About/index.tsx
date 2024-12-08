@@ -17,7 +17,7 @@ export default function About() {
         <Tech />
       </div>
       <motion.div
-        animate={{ y: [0, 10, 0] }}
+        animate={{ y: [0, 20, 0] }}
         transition={{ repeat: Infinity, duration: 5 }}
       >
         <button
@@ -27,7 +27,7 @@ export default function About() {
               nextSection.scrollIntoView({ behavior: "smooth" });
             }
           }}
-          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 hover:bg-white hover:bg-opacity-25 lg:flex"
         >
           <span>Projects</span>
           <FaAngleDoubleDown size={20} />

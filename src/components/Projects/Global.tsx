@@ -20,7 +20,7 @@ export default function Global() {
           <div
             className={`${
               selectedImage === "global1" ? "z-20" : "z-10"
-            } absolute left-[-30px] top-[-30px] h-[200px] w-[200px] overflow-hidden rounded-md border-2 bg-white hover:cursor-pointer lg:left-[-100px] lg:top-[-100px] lg:h-[400px] lg:w-[400px]`}
+            } hover:shadow-glow absolute left-[-30px] top-[-30px] h-[200px] w-[200px] overflow-hidden rounded-md border-2 bg-white drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:left-[-100px] lg:top-[-100px] lg:h-[400px] lg:w-[400px]`}
             onClick={() =>
               setSelectedImage(
                 selectedImage === "global2" ? "global1" : "global2",
@@ -32,7 +32,7 @@ export default function Global() {
           <div
             className={`${
               selectedImage === "global2" ? "z-20" : "z-10"
-            } relative flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg hover:cursor-pointer lg:h-[200px] lg:w-[400px]`}
+            } hover:shadow-glow relative flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:h-[200px] lg:w-[400px]`}
             onClick={() =>
               setSelectedImage(
                 selectedImage === "global1" ? "global2" : "global1",
@@ -45,7 +45,7 @@ export default function Global() {
         <div className="flex flex-col items-start justify-center gap-2">
           <h3 className="text-lg underline lg:text-3xl">Global Chat</h3>
           <p className="text-base lg:text-xl">
-            - Connecting the top Solana Communities through a single discord
+            - Connecting the top Solana communities through a single discord
             chat room
           </p>
           <p className="text-base lg:text-xl">
@@ -54,7 +54,7 @@ export default function Global() {
         </div>
       </div>
       <motion.div
-        animate={{ y: [0, 10, 0] }}
+        animate={{ y: [0, 20, 0] }}
         transition={{ repeat: Infinity, duration: 5 }}
       >
         <button
@@ -64,7 +64,7 @@ export default function Global() {
               nextSection.scrollIntoView({ behavior: "smooth" });
             }
           }}
-          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 hover:bg-white hover:bg-opacity-25 lg:flex"
         >
           <span>C.O.R.E.</span>
           <FaAngleDoubleDown size={20} />

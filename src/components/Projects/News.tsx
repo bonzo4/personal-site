@@ -20,8 +20,8 @@ export default function News() {
         <div className="flex flex-col items-start justify-center gap-2">
           <h3 className="text-lg underline lg:text-3xl">Syndicate News</h3>
           <p className="text-base lg:text-xl">
-            - The leading Web3 Discord Newsletter distributing to 1,300
-            Communities and 35,000 unique users
+            - The leading Web3 Discord Newsletter distributing to over 1,300
+            servers
           </p>
           <p className="text-base lg:text-xl">
             - Built with Typescript and Supabase
@@ -31,7 +31,7 @@ export default function News() {
           <div
             className={`${
               selectedImage === "news1" ? "z-20" : "z-10"
-            } absolute left-[-50px] top-[-50px] h-[200px] w-[200px] overflow-hidden rounded-md border-2 bg-white hover:cursor-pointer lg:left-[-100px] lg:top-[-100px] lg:h-[400px] lg:w-[400px]`}
+            } hover:shadow-glow absolute left-[-50px] top-[-50px] h-[200px] w-[200px] overflow-hidden rounded-md border-2 bg-white drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:left-[-100px] lg:top-[-100px] lg:h-[400px] lg:w-[400px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "news2" ? "news1" : "news2")
             }
@@ -41,7 +41,7 @@ export default function News() {
           <div
             className={`${
               selectedImage === "news2" ? "z-20" : "z-10"
-            } relative flex h-[200px] w-[200px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg hover:cursor-pointer lg:h-[400px] lg:w-[400px]`}
+            } hover:shadow-glow relative flex h-[200px] w-[200px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:h-[400px] lg:w-[400px]`}
             onClick={() =>
               setSelectedImage(selectedImage === "news1" ? "news2" : "news1")
             }
@@ -51,7 +51,7 @@ export default function News() {
         </div>
       </div>
       <motion.div
-        animate={{ y: [0, 10, 0] }}
+        animate={{ y: [0, 20, 0] }}
         transition={{ repeat: Infinity, duration: 5 }}
       >
         <button
@@ -61,7 +61,7 @@ export default function News() {
               nextSection.scrollIntoView({ behavior: "smooth" });
             }
           }}
-          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 lg:flex"
+          className="hidden flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 hover:bg-white hover:bg-opacity-25 lg:flex"
         >
           <span>Global Chat</span>
           <FaAngleDoubleDown size={20} />

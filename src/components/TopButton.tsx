@@ -31,7 +31,7 @@ export default function TopButton() {
 
   return (
     <motion.div
-      animate={{ y: [0, -10, 0] }}
+      animate={{ y: [0, -20, 0] }}
       transition={{ repeat: Infinity, duration: 5 }}
     >
       <button
@@ -41,7 +41,7 @@ export default function TopButton() {
             nextSection.scrollIntoView({ behavior: "smooth" });
           }
         }}
-        className={`flex flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}
+        className={`flex flex-row items-center justify-center gap-2 rounded-full border-2 border-white bg-black px-4 py-2 transition-opacity duration-500 hover:bg-white hover:bg-opacity-25 ${isVisible ? "opacity-100" : "opacity-0"}`}
       >
         <span>Top</span>
         <FaAngleDoubleUp size={20} />

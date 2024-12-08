@@ -13,12 +13,12 @@ export default function Dropper() {
       className="flex min-h-screen grow flex-col items-center justify-center gap-20"
       id="dropper"
     >
-      <div className="flex max-w-[1200px] flex-col-reverse items-center justify-center gap-24 lg:flex-row">
-        <div className="relative ml-8 mt-4 lg:ml-0">
+      <div className="flex max-w-[1200px] flex-col-reverse items-center justify-center gap-10 lg:flex-row lg:gap-24">
+        <div className="relative mr-8 mt-4 lg:mr-24">
           <div
             className={`${
               selectedImage === "dropper1" ? "z-20" : "z-10"
-            } absolute left-[-30px] top-[-30px] h-[150px] w-[300px] overflow-hidden rounded-md border-2 bg-white hover:cursor-pointer lg:left-[-60px] lg:top-[-60px] lg:h-[250px] lg:w-[500px]`}
+            } hover:shadow-glow relative h-[150px] w-[300px] overflow-hidden rounded-md border-2 bg-white drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:h-[250px] lg:w-[500px]`}
             onClick={() =>
               setSelectedImage(
                 selectedImage === "dropper2" ? "dropper1" : "dropper2",
@@ -30,7 +30,7 @@ export default function Dropper() {
           <div
             className={`${
               selectedImage === "dropper2" ? "z-20" : "z-10"
-            } relative flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg hover:cursor-pointer lg:h-[250px] lg:w-[500px]`}
+            } hover:shadow-glow absolute bottom-[-30px] right-[-30px] flex h-[150px] w-[300px] items-end justify-end overflow-hidden rounded-md border-2 bg-white shadow-lg drop-shadow-md hover:cursor-pointer hover:drop-shadow-lg lg:bottom-[-60px] lg:right-[-60px] lg:h-[250px] lg:w-[500px]`}
             onClick={() =>
               setSelectedImage(
                 selectedImage === "dropper1" ? "dropper2" : "dropper1",

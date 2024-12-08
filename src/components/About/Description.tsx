@@ -3,10 +3,10 @@ export default function Description() {
     <div className="bg-w flex w-full flex-col items-start justify-start gap-4 lg:w-1/2">
       <h2 className="text-xl lg:text-3xl">Description:</h2>
       <p className="text-base lg:text-xl">
-        Hello, I&apos;m Alonzo, a passionate software developer with experience
-        in building Solana platforms. I have proven track record in building
-        high-engagement newsletters, crafting responsive UIs, and creating
-        robust blockchain applications using Typescript, Rust, and Open Source
+        Hello, I&apos;m Alonzo, a passionate developer with experience in
+        building Solana platforms. I have proven track record in building
+        engaging media tools, crafting responsive UIs, and creating robust
+        blockchain applications using Typescript, Rust, and Open Source
         Technology.
       </p>
     </div>

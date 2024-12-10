@@ -17,9 +17,9 @@ export default function Hero() {
         animate={{ y: 0 }}
         transition={{ duration: 1, type: "spring", stiffness: 50, delay: 0.5 }}
       >
-        <h1 className="text-center text-3xl lg:text-5xl">
-          Full-stack Dev with On-chain Experience
-        </h1>
+        <h2 className="text-center text-3xl lg:text-5xl">
+          Full-stack Web3 Dev
+        </h2>
       </motion.div>
       <div className="flex flex-col items-center justify-center gap-4 lg:flex-row lg:gap-20">
         <motion.div
@@ -47,7 +47,7 @@ export default function Hero() {
           }}
         >
           <div className="flex flex-col items-center gap-2 lg:items-start">
-            <h2 className="text-3xl">Alonzo Sabino (He/Him)</h2>
+            <h1 className="text-3xl">Alonzo Sabino (He/Him)</h1>
             <span>Former: Syndicate Network</span>
             <span className="">Contact: alonzo.bonzo.dev@gmail.com</span>
             <div className="flex flex-row gap-4">

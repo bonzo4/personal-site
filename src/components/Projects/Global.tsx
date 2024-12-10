@@ -2,10 +2,9 @@
 
 import global1 from "@/public/projects/global1.png";
 import global2 from "@/public/projects/global2.png";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { FaAngleDoubleDown, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Global() {
   const [selectedImage, setSelectedImage] = useState("global2");

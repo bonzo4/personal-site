@@ -1,12 +1,7 @@
 "use client";
 
-import news1 from "@/public/projects/news1.png";
-import news2 from "@/public/projects/news2.png";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import News from "./News";
 import Global from "./Global";
 import Core from "./Core";

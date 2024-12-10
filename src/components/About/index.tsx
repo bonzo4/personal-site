@@ -22,7 +22,7 @@ export default function About() {
       >
         <button
           onClick={() => {
-            const nextSection = document.getElementById("news");
+            const nextSection = document.getElementById("projects");
             if (nextSection) {
               nextSection.scrollIntoView({ behavior: "smooth" });
             }

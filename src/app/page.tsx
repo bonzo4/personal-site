@@ -1,9 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import Core from "@/components/Projects/Core";
-import Dropper from "@/components/Projects/Dropper";
-import Global from "@/components/Projects/Global";
-import News from "@/components/Projects/News";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -15,6 +12,9 @@ export default function Home() {
         <About />
       </div>
       <div className="h-screen snap-start px-4">
+        <Projects />
+      </div>
+      {/* <div className="h-screen snap-start px-4">
         <News />
       </div>
       <div className="h-screen snap-start px-4">
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className="h-screen snap-start px-4">
         <Dropper />
-      </div>
+      </div> */}
     </div>
   );
 }

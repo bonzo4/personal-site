@@ -19,8 +19,12 @@ export default async function contact({ name, email, message }: Props) {
       throw new Error(response.error.message);
     }
     return "success";
-  } catch (error: any) {
-    console.error(error.message);
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    } else {
+      console.error(String(error));
+    }
     return "error";
   }
 }

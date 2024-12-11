@@ -6,7 +6,7 @@ export default function Footer() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const dropperSection = document.getElementById("dropper");
+    const dropperSection = document.getElementById("contact");
 
     if (!dropperSection) return;
 

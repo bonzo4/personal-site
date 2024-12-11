@@ -6,6 +6,7 @@ import News from "./News";
 import Global from "./Global";
 import Core from "./Core";
 import Dropper from "./Dropper";
+import Tally from "./Tally";
 
 export default function Projects() {
   return (
@@ -40,6 +41,13 @@ export default function Projects() {
           <Core />
         </div>
         {/* Section 4 */}
+        <div
+          id="tally-section"
+          className="flex w-full shrink-0 snap-start items-center justify-center"
+        >
+          <Tally />
+        </div>
+        {/* Section 5 */}
         <div
           id="dropper-section"
           className="flex w-full shrink-0 snap-start items-center justify-center"

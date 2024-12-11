@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Description() {
   return (
-    <div className="bg-w flex w-full flex-col items-start justify-start gap-4 lg:w-1/2">
+    <div className="bg-w flex w-full flex-col items-start justify-start gap-2 lg:w-1/2 lg:gap-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export default function Description() {
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        <p className="text-base lg:text-xl">
+        <p className="text-sm lg:text-xl">
           Hello, I&apos;m Alonzo, a passionate developer with experience in
           building Web3 platforms. I have proven track record in building
           engaging media tools, crafting responsive UIs, and creating robust

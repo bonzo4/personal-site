@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export default function Tech() {
   return (
-    <div className="flex w-full flex-col items-start justify-center gap-4 lg:w-1/2">
+    <div className="flex w-full flex-col items-start justify-center gap-2 lg:w-1/2 lg:gap-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

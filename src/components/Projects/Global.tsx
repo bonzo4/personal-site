@@ -44,6 +44,9 @@ export default function Global() {
           room
         </p>
         <p className="text-base lg:text-xl">
+          - Over 1,500 users and 10,000 messages
+        </p>
+        <p className="text-base lg:text-xl">
           - Built with Typescript, NestJs and Supabase
         </p>
         <a

@@ -13,6 +13,24 @@
     --foreground: #ededed;
   }
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.scrollbar-show {
+  -ms-overflow-style: auto; /* Internet Explorer 10+ */
+  scrollbar-width: auto; /* Firefox */
+}
+
+.scrollbar-show::-webkit-scrollbar {
+  display: block; /* Safari and Chrome */
+}
+
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
   width: 4px;

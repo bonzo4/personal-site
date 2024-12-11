@@ -18,7 +18,7 @@ export default function Description() {
         transition={{ duration: 1, delay: 1 }}
       >
         <p className="text-base lg:text-xl">
-          Hello, I&apos;m Alonzo, a passionate developer with a experience in
+          Hello, I&apos;m Alonzo, a passionate developer with experience in
           building Web3 platforms. I have proven track record in building
           engaging media tools, crafting responsive UIs, and creating robust
           blockchain applications using Typescript, Rust, and Open Source

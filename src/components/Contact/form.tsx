@@ -32,9 +32,9 @@ export default function Form() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex w-full max-w-[700px] flex-col gap-4 text-black"
+      className="flex w-full max-w-[600px] flex-col gap-4 text-black"
     >
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-col gap-2 lg:flex-row">
         <input
           type="text"
           value={name}

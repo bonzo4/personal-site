@@ -29,7 +29,7 @@ export default function News() {
         >
           <div className="flex flex-col gap-2">
             <p className="text-base lg:text-xl">
-              - The leading Web3 Discord Newsletter distributing to over 2,00
+              - The leading Web3 Discord Newsletter distributing to over 2,000
               communities and 35,000 unique readers
             </p>
             <p className="text-base lg:text-xl">

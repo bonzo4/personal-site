@@ -17,9 +17,7 @@ export default function Hero() {
         animate={{ y: 0 }}
         transition={{ duration: 1, type: "spring", stiffness: 50, delay: 0.5 }}
       >
-        <h2 className="text-center text-3xl lg:text-5xl">
-          Full-stack Web3 Dev
-        </h2>
+        <h2 className="text-center text-3xl lg:text-5xl">Full-stack Web Dev</h2>
       </motion.div>
       <div className="flex flex-col items-center justify-center gap-4 lg:flex-row lg:gap-20">
         <motion.div

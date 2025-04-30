@@ -21,7 +21,7 @@ export default function Dropper() {
           - SPL Token Giveaway and Promotional Platform
         </p>
         <p className="text-base lg:text-xl">
-          - Built with Typescript, Nextjs, Rust, Anchor and Supabase
+          - Built with Typescript, Nextjs, Rust and Supabase
         </p>
       </div>
     </div>

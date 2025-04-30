@@ -15,7 +15,7 @@ export default function Core() {
           - Over 300 tickets completed and 80 employees
         </p>
         <p className="text-base lg:text-xl">
-          - Built with Typescript, Nextjs, Rust, Anchor and Supabase
+          - Built with Typescript, Nextjs, Rust and Supabase
         </p>
       </div>
       <div className="flex flex-row items-center justify-center overflow-hidden">

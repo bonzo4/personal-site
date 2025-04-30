@@ -49,7 +49,7 @@ export default function Footer() {
           <FaLinkedin size={25} className="hover:opacity-50" />
         </a>
       </div>
-      <span className="text-xs">ALONZO SABINO © 2024</span>
+      <span className="text-xs">ALONZO SABINO © 2025</span>
     </footer>
   );
 }

@@ -19,12 +19,12 @@ export default function Description() {
       >
         <p className="text-sm lg:text-xl">
           Hello, I&apos;m Alonzo, a passionate developer with experience in
-          building Web3 platforms. I have proven track record in building
-          engaging media tools, crafting responsive UIs, and creating robust
-          blockchain applications using Typescript, Rust, and Open Source
-          Technology. My time working with startups and smaller teams has honed
-          my ability to adapt quickly, collaborate effectively, and deliver
-          impactful solutions in dynamic environments.
+          building founding and running my own startup. I have proven track
+          record in building engaging media tools, crafting responsive UIs, and
+          applications using Typescript and Open Source Technology. My time
+          working with startups and smaller teams has honed my ability to adapt
+          quickly, collaborate effectively, and deliver impactful solutions in
+          dynamic environments.
         </p>
       </motion.div>
     </div>

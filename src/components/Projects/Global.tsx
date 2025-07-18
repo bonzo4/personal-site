@@ -40,19 +40,16 @@ export default function Global() {
       <div className="flex flex-col items-start justify-center gap-2">
         <h3 className="text-lg underline lg:text-3xl">Global Chat</h3>
         <p className="text-base lg:text-xl">
-          - Connecting the top Solana communities through a single Discord chat
-          room
+          - Connecting the top communities through a single Discord Chat Room
         </p>
         <p className="text-base lg:text-xl">
           - Over 1,500 users and 10,000 messages
         </p>
-        <p className="text-base lg:text-xl">
-          - Built with Typescript, NestJs and Supabase
-        </p>
+        <p className="text-base lg:text-xl">- Built with Typescript</p>
         <a
-          href="https://ntwrk.global"
+          href="https://github.com/bonzo4/global-bot"
           target="_blank"
-          className="flex flex-row items-center gap-2 text-base hover:underline lg:text-xl"
+          className="flex flex-row items-center gap-2 text-base underline hover:no-underline lg:text-xl"
         >
           <span>Learn More</span>
           <FaExternalLinkAlt size={16} />

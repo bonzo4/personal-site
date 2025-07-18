@@ -5,6 +5,7 @@ import news2 from "@/public/projects/news2.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function News() {
   const [selectedImage, setSelectedImage] = useState("news1");
@@ -28,24 +29,21 @@ export default function News() {
         >
           <div className="flex flex-col gap-2">
             <p className="text-base lg:text-xl">
-              - The leading Web3 Discord Newsletter distributing to over 2,000
-              communities and 35,000 unique readers
+              - A leading Newsletter Discord Application distributing to over
+              2,000 communities
             </p>
             <p className="text-base lg:text-xl">
-              - Over 2 million views, 240,000 interactions, and 40,000 link
-              clicks
+              - Over 2 million views and 300 thousand interactions
             </p>
-            <p className="text-base lg:text-xl">
-              - Built with Typescript and Supabase
-            </p>
-            {/* <a
-              href="https://syndicatenetwork.io"
+            <p className="text-base lg:text-xl">- Built with Typescript</p>
+            <a
+              href="https://github.com/bonzo4/news-bot"
               target="_blank"
-              className="flex flex-row items-center gap-2 text-base hover:underline lg:text-xl"
+              className="flex flex-row items-center gap-2 text-base underline hover:no-underline lg:text-xl"
             >
               <span>Learn More</span>
               <FaExternalLinkAlt size={16} />
-            </a> */}
+            </a>
           </div>
         </motion.div>
       </div>
